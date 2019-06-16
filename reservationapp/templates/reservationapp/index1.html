@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命科学学院预约系统</title>
+     <style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+#head {
+	height: 120px;
+	width: 100%;
+    background-image: url(../../../static/img/head1.png);
+	background-color: #6b6bce;
+    background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+#wrap {
+	height: 616px;
+	width: 250px;
+
+	position: relative;
+}
+
+/***********************************************8*/
+.logGet {
+	height: 600px;
+	width: 100%;
+	position: relative;
+	border: 7px solid #8745cc;
+	background-color: #dde7f1;
+	float: left;
+}
+.footer {
+	height: 600px;
+	width: 1255px;
+	border: 7px solid #8745cc;border-left: 0;
+	background-color: #dde7f1;
+	margin-left: 263px;
+	position: relative;
+}
+
+.logGet .logA {
+	width: 100%;
+	background-color: #dde7f1;
+}
+
+.logGet .logB {
+	width: 100%;
+	background-color: #dde7f1;
+}
+.logGet .logC {
+	width: 100%;
+	background-color: #dde7f1;
+}
+
+.logA a button {
+	width: 100%;
+	height: 65px;
+	background-color: #dde7f1;
+	color: #000000;
+	font-size: 20px;
+}
+.logA a button:hover{
+	color: #3B666B;
+}
+.logB a button {
+	width: 100%;
+	height: 65px;
+	background-color: #dde7f1;
+	color: #000000;
+	font-size: 20px;
+}
+.logB a button:hover{
+	color: #3B666B;
+}
+.logC a button {
+	width: 100%;
+	height: 65px;
+	background-color: #dde7f1;
+	color: black;
+	font-size: 20px;
+}
+.logC a button:hover{
+	color: #3B666B;
+}
+.logGet .logDtip .p1 {
+    height: 100%;
+    width: 100%;
+	display: inline-block;
+	font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #8745cc;
+}
+.logGet .logDtip {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logGet .logDtip .img1{
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
+.logGet .logDtip .img2{
+	margin-top: 10px;
+	margin-left: 215px;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
+.footer .title{
+	width: 100%;
+	font-size: 18px;
+	border-bottom: 1px solid #000000;
+}
+.footer .title .img3{
+	height: 18px;
+	width: 18px;
+	margin-left: 5px;
+	margin-right: 15px;
+}
+.footer .notice{
+	position: relative;
+	top: 70px;
+	left: 100px;
+	height: 450px;
+	width: 1050px;
+}
+.footer .notice .place{
+	margin-left: 200px;
+	font-size: 20px;
+}
+.footer .notice .people{
+	margin-left: 200px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.footer .notice .people input{
+	margin-left: 5px;
+	height: 30px;
+	width: 199px;
+}
+.footer .notice .time{
+	margin-left: 200px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.footer .notice .time input{
+	margin-left: 5px;
+	height: 30px;
+	width: 150px;
+}
+.footer .notice .number{
+	margin-left: 200px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.footer .notice .number input{
+	margin-left: 5px;
+	height: 30px;
+	width: 199px;
+}
+.footer .notice .remark{
+	margin-left: 200px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.footer .notice .remark textarea{
+	margin-left: 5px;
+	resize: none;
+	vertical-align: top;
+}
+.footer .notice a button {
+	width: 70px;
+	height: 45px;
+	background-color: #ababab;
+;
+	border: none;
+	margin-left: 750px;
+	margin-top: 30px;
+	color: black;
+	font-size: 18px;
+}
+.footer .notice a button:hover{
+	color: #3B666B;
+}
+</style>
+</head>
+<body>
+<div class="header" id="head">
+</div>
+<!--****************************************************************-->
+<div class="wrap" id="wrap">
+	<div class="logGet">
+			<!-- 头部提示信息 -->
+			<div class="logDtip">
+				<img class="img1" src="../../../static/img/point.png" alt=""/>
+				<img  class="img2" src="../../../static/img/point.png" alt=""/>
+				<p class="p1">栏目导航
+
+				</p>
+			</div>
+			<div class="logA">
+				<!--<a href="index.html" target="_self"><button>登 录</button></a>-->
+				<a href="" target="_self"><button>场地预约</button></a>
+			</div>
+			<div class="logB">
+				<!--<a href="index.html" target="_self"><button>登 录</button></a>-->
+				<a href="" target="_self"><button>仪器预约</button></a>
+			</div>
+			<div class="logC">
+				<a href="" target="_self"><button>场地、仪器预约列表</button></a>
+			</div>
+	</div>
+	<div class="footer" id="foot" >
+		<p class="title"><img  class="img3" src="../../../static/img/right.png" alt=""/>场地预约</p>
+		<div class="notice">
+			<p class="place">预约场地：
+			<select style="height: 40px;width: 200px">
+				<option value="place0" style="display: none;">请选择</option>
+				<option value="place1">生化楼前2楼会议室</option>
+				<option value="place2">生化楼后2楼会议室</option>
+				<option value="place3">生化楼1楼阅览室</option>
+				<option value="place4">生化楼前5楼会议室</option>
+			</select>
+			</p>
+			<p class="people">预约人员：<input type="text" /></p>
+			<p class="time">预约时间：<input class="time_begin" type="date"/> <input type="time"/> 至 <input class="time_end" type="date"/> <input type="time"/></p>
+			<p class="number">联系方式：<input type="text" /></p>
+			<p class="remark">其他备注：<textarea rows="3" cols="50"></textarea></p>
+			<a href="" target="_self"><button>确 定</button></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命科学学院预约系统</title>
+    <style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+#head {
+	height: 120px;
+	width: 100%;
+    background-image: url(../../../static/img/head1.png);
+	background-color: #6b6bce;
+    background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+#wrap {
+	height: 500px;
+	width: 100%;
+	background-image: url(../../../static/img/house.jpg);
+    background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+#foot {
+	width: 100%;
+	height: 130px;
+	background-color: #6b6bce;
+	position: relative;
+}
+/******************************************************************************/
+.logGet {
+	height: 408px;
+	width: 300px;
+	position: absolute;
+	background-color: #FFFFFF;
+	top: 10%;
+	right: 5%;
+}
+.logB a button {
+	width: 100%;
+	height: 45px;
+	background-color: #ee9415;
+	border: none;
+	margin-bottom: 10px;
+	color: black;
+	font-size: 18px;
+}
+.logB a button:hover{
+	color: #3B666B;
+}
+.logC a button {
+	width: 100%;
+	height: 45px;
+	background-color: #ee9415;
+	border: none;
+	color: black;
+	font-size: 18px;
+}
+.logC a button:hover{
+	color: #3B666B;
+}
+.logGet .logDtip .p1 {
+	display: inline-block;
+	font-size: 28px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	width: 86%;
+}
+.logGet .logDtip {
+	width: 86%;
+	border-bottom: 2px solid #ee7700;
+	margin-bottom: 60px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logGet .lgD {
+	width: 86%;
+	position: relative;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logGet .lgD img {
+	position: absolute;
+	top: 12px;
+	left: 8px;
+}
+.logGet .lgD input {
+	width: 100%;
+	height: 42px;
+	text-indent: 2.5rem;
+}
+
+.logGet .logC {
+	width: 86%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.logGet .logB {
+	width: 86%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+/*******************************************************************************/
+.copyright {
+	font-family: "宋体";
+	color: #FFFFFF;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);  /* 使用css3的transform来实现 */
+	height: 60px;
+	width: 40%;
+	text-align:center;
+}
+.copyright p {
+	height: 24px;
+	width: 100%;
+}
+.copyright .img {
+	width: 100%;
+	height: 24px;
+	position: relative;
+}
+.copyright .img img{
+	top: 5px;
+	right: 5px;
+	position: relative;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="header" id="head">
+</div>
+<!--****************************************************************-->
+<div class="wrap" id="wrap">
+	<div class="logGet">
+			<!-- 头部提示信息 -->
+			<div class="logDtip">
+				<p class="p1">登录</p>
+			</div>
+			<!-- 输入框 -->
+			<div class="lgD">
+				<img src="../../../static/img/username.png" width="20" height="20" alt=""/>
+				<input type="text"
+					placeholder="输入用户名" />
+			</div>
+			<div class="lgD">
+				<img src="../../../static/img/password.png" width="20" height="20" alt=""/>
+				<input type="text"
+					placeholder="输入用户密码" />
+			</div>
+			<div class="logB">
+				<!--<a href="index.html" target="_self"><button>登 录</button></a>-->
+				<a href="index1" target="_self"><button>登 录</button></a>
+			</div>
+			<div class="logC">
+				<a href="" target="_self"><button>注 册</button></a>
+			</div>
+
+
+	</div>
+</div>
+<!--***********************************************************************-->
+<div class="footer" id="foot">
+  <div class="copyright">
+      <p>Copyright © 2019 All Rights Reserved Powered by Liu Yiyang</p>
+      <div class="img">
+		  <img src="../../../static/img/phone.png" width="20" height="20" alt=""/>
+		<span>会议室预约管理联系人：陈老师13955385060</span>
+      </div>
+      <div class="img">
+		  <img src="../../../static/img/phone.png" width="20" height="20" alt=""/>
+		<span>仪器预约管理联系人：王老师18963759986 闫老师15156306244</span>
+	  </div>
+      <div class="img">
+		  <img src="../../../static/img/school.png" width="20" height="20" alt=""/>
+	  	<span>联系地址：安徽师范大学赭山校区生命科学学院</span>
+      </div>
+  </div>
+</div>
+</body>
+</html>

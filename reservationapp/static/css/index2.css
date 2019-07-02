@@ -19,6 +19,24 @@
 }
 
 /***********************************************8*/
+.header img{
+	height: 15px;
+	width: 15px;
+}
+.header a button{
+	background-color: #6b6bce;
+	border: none;
+	color: black;
+	font-size: 15px;
+	width: 100px;
+	height: 50px;
+	float: right;
+	/*margin-top: 60px;*/
+}
+.header a button:hover{
+	color: #3B666B;
+}
+
 .logGet {
 	height: 600px;
 	width: 100%;

@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="header" id="head">
+    <a href="{% url 'user_logout' %}" target="_self"><button><img class="img1" src="../../static/img/exit.png" alt=""/>退 出 登 录</button></a>
 </div>
 <!--****************************************************************-->
 <div class="wrap" id="wrap">
@@ -19,6 +20,7 @@
 
 				</p>
 			</div>
+
 			<div class="logA">
 				<!--<a href="index.html" target="_self"><button>登 录</button></a>-->
 				<a href="{% url 'index1' %}" target="_self"><button>场地预约</button></a>
@@ -28,7 +30,7 @@
 				<a href="{% url 'index2' %}" target="_self"><button>仪器预约</button></a>
 			</div>
 			<div class="logC">
-				<a href="" target="_self"><button>场地、仪器预约列表</button></a>
+				<a href="{% url 'index3' %}" target="_self"><button>场地、仪器预约列表</button></a>
 			</div>
 	</div>
 	<div class="footer" id="foot" >
@@ -45,7 +47,7 @@
 			</select>
 			</p>
 			<p class="people">预约人员：<input type="text" /></p>
-			<p class="time">预约时间：<input class="time_begin" type="date"/> <input type="time"/> 至 <input class="time_end" type="date"/> <input type="time"/></p>
+			<p class="time">预约时间：<input class="data_begin" type="date"/> <input class="time_begin" type="time"/> 至 <input class="date_end" type="date"/> <input class="time_end" type="time"/></p>
 			<p class="number">联系方式：<input type="text" /></p>
 			<p class="remark">其他备注：<textarea rows="3" cols="50"></textarea></p>
 			<a href="" target="_self"><button>确 定</button></a>

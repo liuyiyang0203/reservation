@@ -36,7 +36,6 @@
 .header a button:hover{
 	color: #3B666B;
 }
-
 .logGet {
 	height: 600px;
 	width: 100%;
@@ -98,7 +97,6 @@
 .logC a button:hover{
 	color: #3B666B;
 }
-
 .logGet .logDtip .p1 {
     height: 100%;
     width: 100%;
@@ -146,61 +144,7 @@
 	height: 450px;
 	width: 1050px;
 }
-.footer .notice .place{
-	margin-left: 200px;
-	font-size: 20px;
-}
-.footer .notice .people{
-	margin-left: 200px;
-	font-size: 20px;
-	margin-top: 30px;
-}
-.footer .notice .people input{
-	margin-left: 5px;
-	height: 30px;
-	width: 199px;
-}
-.footer .notice .time{
-	margin-left: 200px;
-	font-size: 20px;
-	margin-top: 30px;
-}
-.footer .notice .time input{
-	margin-left: 5px;
-	height: 30px;
-	width: 150px;
-}
-.footer .notice .number{
-	margin-left: 200px;
-	font-size: 20px;
-	margin-top: 30px;
-}
-.footer .notice .number input{
-	margin-left: 5px;
-	height: 30px;
-	width: 199px;
-}
-.footer .notice .remark{
-	margin-left: 200px;
-	font-size: 20px;
-	margin-top: 30px;
-}
-.footer .notice .remark textarea{
-	margin-left: 5px;
-	resize: none;
-	vertical-align: top;
-}
-.footer .notice a button {
-	width: 70px;
-	height: 45px;
-	background-color: #ababab;
-;
-	border: none;
-	margin-left: 750px;
-	margin-top: 30px;
-	color: black;
-	font-size: 18px;
-}
-.footer .notice a button:hover{
-	color: #3B666B;
+.footer .notice .table{
+	height: 50px;
+	width: 100%;
 }

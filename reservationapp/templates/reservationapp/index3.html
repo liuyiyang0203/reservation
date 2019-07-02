@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>生命科学学院预约系统</title>
-
-	<link rel="stylesheet" href="../../static/css/index1.css">
+	<link rel="stylesheet" href="../../static/css/index3.css">
 </head>
 <body>
 <div class="header" id="head">
@@ -32,25 +31,19 @@
 			<div class="logC">
 				<a href="{% url 'index3' %}" target="_self"><button>场地、仪器预约列表</button></a>
 			</div>
-
 	</div>
 	<div class="footer" id="foot" >
-		<p class="title"><img  class="img3" src="../../static/img/right.png" alt=""/>场地预约</p>
+		<p class="title"><img  class="img3" src="../../static/img/right.png" alt=""/>场地、仪器预约列表</p>
 		<div class="notice">
-			<p class="place">预约场地：
-			<select style="height: 40px;width: 200px">
-				<option value="place0" style="display: none;">请选择</option>
-				<option value="place1">生化楼前2楼会议室</option>
-				<option value="place2">生化楼后2楼会议室</option>
-				<option value="place3">生化楼1楼阅览室</option>
-				<option value="place4">生化楼前5楼会议室</option>
-			</select>
-			</p>
-			<p class="people">预约人员：<input type="text" /></p>
-			<p class="time">预约时间：<input class="data_begin" type="date"/> <input class="time_begin" type="time"/> 至 <input class="date_end" type="date"/> <input class="time_end" type="time"/></p>
-			<p class="number">联系方式：<input type="text" /></p>
-			<p class="remark">其他备注：<textarea rows="3" cols="50"></textarea></p>
-			<a href="" target="_self"><button>确 定</button></a>
+			<table border="1" class="table">
+				<tr>
+					<th>预约人员</th>
+					<th>预约时间</th>
+					<th>预约场地、仪器</th>
+					<th>联系方式</th>
+					<th>其他备注</th>
+				</tr>
+			</table>
 		</div>
 	</div>
 </div>

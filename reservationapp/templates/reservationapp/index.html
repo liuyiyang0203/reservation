@@ -17,24 +17,24 @@
 				<p class="p1">登录</p>
 			</div>
 			<!-- 输入框 -->
+			<form action="/index/" method="post">
+			{% csrf_token %}
 			<div class="lgD">
 				<img src="../../static/img/username.png" width="20" height="20" alt=""/>
-				<input type="text"
+				<input type="text" name="username"
 					placeholder="输入用户名" />
 			</div>
 			<div class="lgD">
 				<img src="../../static/img/password.png" width="20" height="20" alt=""/>
-				<input type="text"
+				<input type="password" name="password"
 					placeholder="输入用户密码" />
 			</div>
 			<div class="logB">
-				<!--<a href="index.html" target="_self"><button>登 录</button></a>-->
-				<a href="{% url 'index1' %}" target="_self"><button>登 录</button></a>
+				<input type="submit" value="登录">
+				<div style="color:red;">{{ error_msg }}</div>
+				<!--<a href="{% url 'index1' %}" target="_self"><button>登 录</button></a>-->
 			</div>
-			<div class="logC">
-				<a href="" target="_self"><button>注 册</button></a>
-			</div>
-
+			</form>
 
 	</div>
 </div>

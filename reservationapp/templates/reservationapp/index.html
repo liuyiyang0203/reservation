@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>生命科学学院预约系统</title>
-    <link rel="stylesheet" href="../../static/css/index.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 
 <body>
@@ -20,12 +21,12 @@
 			<form action="/index/" method="post">
 			{% csrf_token %}
 			<div class="lgD">
-				<img src="../../static/img/username.png" width="20" height="20" alt=""/>
+				<img src="../../../static/img/username.png" width="20" height="20" alt=""/>
 				<input type="text" name="username"
 					placeholder="输入用户名" />
 			</div>
 			<div class="lgD">
-				<img src="../../static/img/password.png" width="20" height="20" alt=""/>
+				<img src="../../../static/img/password.png" width="20" height="20" alt=""/>
 				<input type="password" name="password"
 					placeholder="输入用户密码" />
 			</div>
@@ -47,11 +48,11 @@
 		<span>会议室预约管理联系人：陈老师13955385060</span>
       </div>
       <div class="img">
-		  <img src="../../static/img/phone.png" width="20" height="20" alt=""/>
+		  <img src="../../../static/img/phone.png" width="20" height="20" alt=""/>
 		<span>仪器预约管理联系人：王老师18963759986 闫老师15156306244</span>
 	  </div>
       <div class="img">
-		  <img src="../../static/img/school.png" width="20" height="20" alt=""/>
+		  <img src="../../../static/img/school.png" width="20" height="20" alt=""/>
 	  	<span>联系地址：安徽师范大学赭山校区生命科学学院</span>
       </div>
   </div>

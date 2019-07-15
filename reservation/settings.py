@@ -25,7 +25,7 @@ SECRET_KEY = 'hoc_@q1i()af!=w6t@8j+29z7su!bwv51=!zaxw=l)6^5_2=vj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -118,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -131,6 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 STATICFILES_DIRS = [
 
     os.path.join(BASE_DIR, 'static'),
@@ -138,3 +139,5 @@ STATICFILES_DIRS = [
 ]
 LOGIN_URL = '/index/'
 AUTH_USER_MODEL = 'reservationapp.RUser'
+
+# CKEDITOR_JQUERY_URL ='https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'

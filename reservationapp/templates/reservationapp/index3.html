@@ -1,21 +1,22 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>生命科学学院预约系统</title>
-	<link rel="stylesheet" href="../../static/css/index3.css">
+	<link rel="stylesheet" href="{% static 'css/index3.css' %}">
 </head>
 <body>
 <div class="header" id="head">
-    <a href="{% url 'user_logout' %}" target="_self"><button><img class="img1" src="../../static/img/exit.png" alt=""/>退 出 登 录</button></a>
+    <a href="{% url 'user_logout' %}" target="_self"><button><img class="img1" src="../../../static/img/exit.png" alt=""/>退 出 登 录</button></a>
 </div>
 <!--****************************************************************-->
 <div class="wrap" id="wrap">
 	<div class="logGet">
 			<!-- 头部提示信息 -->
 			<div class="logDtip">
-				<img class="img1" src="../../static/img/point.png" alt=""/>
-				<img  class="img2" src="../../static/img/point.png" alt=""/>
+				<img class="img1" src="../../../static/img/point.png" alt=""/>
+				<img  class="img2" src="../../../static/img/point.png" alt=""/>
 				<p class="p1">栏目导航
 
 				</p>
@@ -33,17 +34,32 @@
 			</div>
 	</div>
 	<div class="footer" id="foot" >
-		<p class="title"><img  class="img3" src="../../static/img/right.png" alt=""/>场地、仪器预约列表</p>
+		<p class="title"><img  class="img3" src="../../../static/img/right.png" alt=""/>场地、仪器预约列表</p>
 		<div class="notice">
-			<table border="1" class="table">
+			<table border="2" class="table"  style="width: 1049px">
 				<tr>
-					<th>预约人员</th>
 					<th>预约时间</th>
 					<th>预约场地、仪器</th>
+                    <th>预约人员</th>
 					<th>联系方式</th>
 					<th>其他备注</th>
 				</tr>
+                {% for i in e %}
+                <tr align="center">
+                    <td>{{ i.date }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ i.time }}</td>
+                    <td>{{ i.place }}</td>
+                    <td>{{ i.people }}</td>
+                    <td>{{ i.number }}</td>
+                    <td>{{ i.remark }}</td>
+                </tr>
+                {% endfor %}
 			</table>
+            {% if e.has_previous %}
+            <a href="?page={{ e.previous_page_number}}">上一页</a>
+            {% endif %}
+            {% if e.has_next %}
+            <a href="?page={{ e.next_page_number}}" style="float: right">下一页</a>
+            {% endif %}
 		</div>
 	</div>
 </div>

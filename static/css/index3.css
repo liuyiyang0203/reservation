@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#head {
+	height: 120px;
+	width: 100%;
+    background-image: url(../../static/img/head1.png);
+	background-color: #6b6bce;
+    background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+#wrap {
+	height: 616px;
+	width: 250px;
+	position: relative;
+}
+
+/***********************************************8*/
+.header img{
+	height: 15px;
+	width: 15px;
+}
+.header a button{
+	background-color: #6b6bce;
+	border: none;
+	color: black;
+	font-size: 15px;
+	width: 100px;
+	height: 50px;
+	float: right;
+	/*margin-top: 60px;*/
+}
+.header a button:hover{
+	color: #3B666B;
+}
+.logGet {
+	height: 600px;
+	width: 100%;
+	position: relative;
+	border: 7px solid #8745cc;
+	background-color: #dde7f1;
+	float: left;
+}
+.footer {
+	height: 600px;
+	width: 1255px;
+	border: 7px solid #8745cc;border-left: 0;
+	background-color: #dde7f1;
+	/*background-color: #dde7f1;*/
+	margin-left: 263px;
+	position: relative;
+}
+
+.logGet .logA {
+	width: 100%;
+	background-color: #dde7f1;
+}
+
+.logGet .logB {
+	width: 100%;
+	background-color: #dde7f1;
+}
+.logGet .logC {
+	width: 100%;
+	background-color: #dde7f1;
+}
+
+.logA a button {
+	width: 100%;
+	height: 65px;
+	background-color: #dde7f1;
+	color: #000000;
+	font-size: 20px;
+}
+.logA a button:hover{
+	color: #3B666B;
+}
+.logB a button {
+	width: 100%;
+	height: 65px;
+	background-color: #dde7f1;
+	color: #000000;
+	font-size: 20px;
+}
+.logB a button:hover{
+	color: #3B666B;
+}
+.logC a button {
+	width: 100%;
+	height: 65px;
+	background-color: #dde7f1;
+	color: black;
+	font-size: 20px;
+}
+.logC a button:hover{
+	color: #3B666B;
+}
+.logGet .logDtip .p1 {
+    height: 100%;
+    width: 100%;
+	display: inline-block;
+	font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #8745cc;
+}
+.logGet .logDtip {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logGet .logDtip .img1{
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
+.logGet .logDtip .img2{
+	margin-top: 10px;
+	margin-left: 215px;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
+.footer .title{
+	width: 100%;
+	font-size: 18px;
+	border-bottom: 1px solid #000000;
+}
+.footer .title .img3{
+	height: 18px;
+	width: 18px;
+	margin-left: 5px;
+	margin-right: 15px;
+}
+.footer .notice{
+    background-color: #dde7f1;
+	position: relative;
+	top: 50px;
+	left: 100px;
+	height: 450px;
+	width: 1050px;
+}
+/*.footer .notice .table{*/
+	/*height: 50px;*/
+	/*width: 100%;*/
+/*}*/

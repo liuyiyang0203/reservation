@@ -24,7 +24,7 @@ class Place(models.Model):
     place_name = models.CharField(max_length=100, verbose_name='预约场地')
 
     class Meta:
-        verbose_name = '预约场地信息更改'
+        verbose_name = '预约场地种类'
         verbose_name_plural = verbose_name
 
 
@@ -32,5 +32,5 @@ class Instrument(models.Model):
     instrument_name = models.CharField(max_length=100, verbose_name='预约仪器')
 
     class Meta:
-        verbose_name = '预约仪器信息更改'
+        verbose_name = '预约仪器种类'
         verbose_name_plural = verbose_name

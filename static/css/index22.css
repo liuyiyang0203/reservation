@@ -4,7 +4,7 @@
 }
 #head {
 	height: 120px;
-	width: 100%;
+	width: 1519px;
     background-image: url(../../static/img/head1.png);
 	background-color: #6b6bce;
     background-repeat: no-repeat;
@@ -47,10 +47,10 @@
 }
 .footer {
 	height: 600px;
-	width: 1255px;
+	width: 1269px;
 	border: 7px solid #8745cc;border-left: 0;
 	background-color: #dde7f1;
-	margin-left: 263px;
+	margin-left: 250px;
 	position: relative;
 }
 
@@ -98,7 +98,6 @@
 .logC a button:hover{
 	color: #3B666B;
 }
-
 .logGet .logDtip .p1 {
     height: 100%;
     width: 100%;
@@ -141,7 +140,7 @@
 }
 .footer .notice{
 	position: relative;
-	top: 70px;
+	top: 30px;
 	left: 100px;
 	height: 450px;
 	width: 1050px;
@@ -194,9 +193,10 @@
 	width: 70px;
 	height: 45px;
 	background-color: #ababab;
+;
 	border: none;
 	margin-left: 750px;
-	margin-top: 30px;
+	margin-top: 10px;
 	color: black;
 	font-size: 18px;
 }

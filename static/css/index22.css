@@ -108,8 +108,9 @@
     background-color: #8745cc;
 }
 .logGet .logDtip {
+	height: 55px;
 	width: 100%;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-right: auto;
 	margin-left: auto;
 }

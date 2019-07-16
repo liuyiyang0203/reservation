@@ -4,7 +4,7 @@
 }
 #head {
 	height: 120px;
-	width: 100%;
+	width: 1519px;
     background-image: url(../../static/img/head1.png);
 	background-color: #6b6bce;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 }
 #wrap {
 	height: 500px;
-	width: 100%;
+	width: 1519px;
 	background-image: url(../../static/img/house.jpg);
     background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 	position: relative;
 }
 #foot {
-	width: 100%;
+	width: 1519px;
 	height: 130px;
 	background-color: #6b6bce;
 	position: relative;

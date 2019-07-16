@@ -88,7 +88,7 @@ def index2(request):
 @login_required
 def index3(request):
     e = Notice.objects.all().order_by('-date', 'time')
-    paginator = Paginator(e, 15)
+    paginator = Paginator(e, 10)
     page = request.GET.get('page')
     try:  # 获取某页
         e = paginator.page(page)

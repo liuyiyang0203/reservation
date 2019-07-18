@@ -40,35 +40,35 @@
     </div>
    
     
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
-      <div class="container-fluid">
-        <div class="d-flex align-items-center">
+{#    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">#}
+{#      #}
+{#      <div class="container-fluid">#}
+{#        <div class="d-flex align-items-center">#}
 {#          <div class="site-logo mr-auto w-25"><a href="index.html">OneSchool</a></div>#}
-
-          <div class="mx-auto text-center">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地、仪器预约列表</button></a></li>
-                <li><a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约</button></a></li>
-                <li><a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约</button></a></li>
+{##}
+{#          <div class="mx-auto text-center">#}
+{#            <nav class="site-navigation position-relative text-right" role="navigation">#}
+{#              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">#}
+{#                <li><a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地、仪器预约列表</button></a></li>#}
+{#                <li><a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约</button></a></li>#}
+{#                <li><a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约</button></a></li>#}
 {#                <li><a href="#teachers-section" class="nav-link">Teachers</a></li>#}
-              </ul>
-            </nav>
-          </div>
-
-          <div class="ml-auto w-25">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white">退出登录</button></a></li>
-              </ul>
-            </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
-          </div>
-        </div>
-      </div>
-      
-    </header>
+{#              </ul>#}
+{#            </nav>#}
+{#          </div>#}
+{##}
+{#          <div class="ml-auto w-25">#}
+{#            <nav class="site-navigation position-relative text-right" role="navigation">#}
+{#              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">#}
+{#                <li class="cta"><a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white">退出登录</button></a></li>#}
+{#              </ul>#}
+{#            </nav>#}
+{#            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#      #}
+{#    </header>#}
 
     <div class="intro-section single-cover" id="home-section">
       
@@ -79,6 +79,10 @@
               <div class="row justify-content-center align-items-center text-center">
                 <div class="col-lg-6">
                   <h1 data-aos="fade-up" data-aos-delay="0">仪器预约</h1>
+                    <a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地、仪器预约列表</button></a>
+                    <a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约</button></a>
+                    <a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约</button></a>
+                    <a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white">退出登录</button></a>
 {#                  <p data-aos="fade-up" data-aos-delay="100">4 Lessons / 12 Week &bullet; 2,193 students &bullet; <a href="#" class="text-white">6 comments</a></p>#}
                 </div>
 

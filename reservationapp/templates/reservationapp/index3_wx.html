@@ -97,7 +97,7 @@
           <div class="col-lg-8 mb-5">
 
             <div class="mb-5">
-                <table border="2" class="table"  style="width: 1049px;">
+                <table border="2" class="table"  style="width: 200px;">
 				<tr>
 					<th>预约时间</th>
 					<th>预约场地、仪器</th>
@@ -107,7 +107,7 @@
 				</tr>
                 {% for i in e %}
                 <tr>
-                    <td>{{ i.date }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ i.time }}</td>
+                    <td>{{ i.date }}<br>{{ i.time }}</td>
                     <td>{{ i.place }}</td>
                     <td>{{ i.people }}</td>
                     <td>{{ i.number }}</td>

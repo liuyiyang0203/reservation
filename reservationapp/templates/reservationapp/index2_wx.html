@@ -49,9 +49,9 @@
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="../index3_wx" class="nav-link">场地、仪器预约列表</a></li>
-                <li><a href="../index1_wx" class="nav-link">场地预约</a></li>
-                <li><a href="../index2_wx" class="nav-link">仪器预约</a></li>
+                <li><a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地、仪器预约列表</button></a></li>
+                <li><a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约</button></a></li>
+                <li><a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约</button></a></li>
 {#                <li><a href="#teachers-section" class="nav-link">Teachers</a></li>#}
               </ul>
             </nav>
@@ -60,7 +60,7 @@
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="{% url 'user_logout_wx' %}" class="nav-link"><span>退出登录</span></a></li>
+                <li class="cta"><a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white">退出登录</button></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -102,14 +102,14 @@
                 <p class="place">预约仪器*：
                 <select style="height: 30px;width: 200px" name="place">
                     <option value="" style="display: none;">请选择</option>
-                    {% for j in place_name %}
-                    <option>{{ j.place_name }}</option>
+                    {% for j in instrument %}
+                    <option>{{ j.instrument_name }}</option>
                     {% endfor %}
                 </select>
                 </p>
                 <p class="people">预约人员*：<input type="text" style="height: 30px;width: 200px" name="people"/></p>
-                <p class="time">预约时间*：<input class="date" style="height: 30px;width: 200px" type="date" name="date"/>
-                <select style="height: 30px;width: 200px" name="time">
+                <p class="time">预约时间*：<input class="date" style="height: 30px;width: 200px" type="date" name="date"/></p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select style="height: 30px;width: 200px" name="time">
                     <option value="" style="display: none;">请选择</option>
                     <option>8:00-9:00</option>
                     <option>9:00-10:00</option>
@@ -126,9 +126,9 @@
                     <option>20:00-21:00</option>
                     <option>21:00-22:00</option>
                     <option>22:00-23:00</option>
-                </select></p>
+                </select>
                 <p class="number">联系方式*：<input type="text" style="height: 30px;width: 200px" name="number"/></p>
-                其他备注  ：<p class="remark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="50" name="remark"></textarea></p>
+                其他备注  ：<p class="remark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="20" name="remark"></textarea></p>
                 <a href="" target="_self"><button style="background-color:#8b80c6;color:white">确 定</button></a>
                 <p class="error" style="color:red;">{{ error_msg }}</p>
             </form>

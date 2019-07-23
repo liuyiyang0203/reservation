@@ -82,7 +82,7 @@ CREATE TABLE `auth_permission` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `auth_permission_content_type_id_codename_01ab375a_uniq` (`content_type_id`,`codename`),
   CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `auth_permission` (
 
 LOCK TABLES `auth_permission` WRITE;
 /*!40000 ALTER TABLE `auth_permission` DISABLE KEYS */;
-INSERT INTO `auth_permission` VALUES (1,'Can add log entry',1,'add_logentry'),(2,'Can change log entry',1,'change_logentry'),(3,'Can delete log entry',1,'delete_logentry'),(4,'Can view log entry',1,'view_logentry'),(5,'Can add permission',2,'add_permission'),(6,'Can change permission',2,'change_permission'),(7,'Can delete permission',2,'delete_permission'),(8,'Can view permission',2,'view_permission'),(9,'Can add group',3,'add_group'),(10,'Can change group',3,'change_group'),(11,'Can delete group',3,'delete_group'),(12,'Can view group',3,'view_group'),(13,'Can add content type',4,'add_contenttype'),(14,'Can change content type',4,'change_contenttype'),(15,'Can delete content type',4,'delete_contenttype'),(16,'Can view content type',4,'view_contenttype'),(17,'Can add session',5,'add_session'),(18,'Can change session',5,'change_session'),(19,'Can delete session',5,'delete_session'),(20,'Can view session',5,'view_session'),(21,'Can add notice',6,'add_notice'),(22,'Can change notice',6,'change_notice'),(23,'Can delete notice',6,'delete_notice'),(24,'Can view notice',6,'view_notice'),(25,'Can add user',7,'add_ruser'),(26,'Can change user',7,'change_ruser'),(27,'Can delete user',7,'delete_ruser'),(28,'Can view user',7,'view_ruser'),(29,'Can add instrument',8,'add_instrument'),(30,'Can change instrument',8,'change_instrument'),(31,'Can delete instrument',8,'delete_instrument'),(32,'Can view instrument',8,'view_instrument'),(33,'Can add place',9,'add_place'),(34,'Can change place',9,'change_place'),(35,'Can delete place',9,'delete_place'),(36,'Can view place',9,'view_place');
+INSERT INTO `auth_permission` VALUES (1,'Can add log entry',1,'add_logentry'),(2,'Can change log entry',1,'change_logentry'),(3,'Can delete log entry',1,'delete_logentry'),(4,'Can view log entry',1,'view_logentry'),(5,'Can add permission',2,'add_permission'),(6,'Can change permission',2,'change_permission'),(7,'Can delete permission',2,'delete_permission'),(8,'Can view permission',2,'view_permission'),(9,'Can add group',3,'add_group'),(10,'Can change group',3,'change_group'),(11,'Can delete group',3,'delete_group'),(12,'Can view group',3,'view_group'),(13,'Can add content type',4,'add_contenttype'),(14,'Can change content type',4,'change_contenttype'),(15,'Can delete content type',4,'delete_contenttype'),(16,'Can view content type',4,'view_contenttype'),(17,'Can add session',5,'add_session'),(18,'Can change session',5,'change_session'),(19,'Can delete session',5,'delete_session'),(20,'Can view session',5,'view_session'),(21,'Can add 预约仪器种类',6,'add_instrument'),(22,'Can change 预约仪器种类',6,'change_instrument'),(23,'Can delete 预约仪器种类',6,'delete_instrument'),(24,'Can view 预约仪器种类',6,'view_instrument'),(25,'Can add 预约仪器详情',7,'add_notice_instrument'),(26,'Can change 预约仪器详情',7,'change_notice_instrument'),(27,'Can delete 预约仪器详情',7,'delete_notice_instrument'),(28,'Can view 预约仪器详情',7,'view_notice_instrument'),(29,'Can add 预约场地详情',8,'add_notice_place'),(30,'Can change 预约场地详情',8,'change_notice_place'),(31,'Can delete 预约场地详情',8,'delete_notice_place'),(32,'Can view 预约场地详情',8,'view_notice_place'),(33,'Can add 预约场地种类',9,'add_place'),(34,'Can change 预约场地种类',9,'change_place'),(35,'Can delete 预约场地种类',9,'delete_place'),(36,'Can view 预约场地种类',9,'view_place'),(37,'Can add user',10,'add_ruser'),(38,'Can change user',10,'change_ruser'),(39,'Can delete user',10,'delete_ruser'),(40,'Can view user',10,'view_ruser');
 /*!40000 ALTER TABLE `auth_permission` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,7 +116,7 @@ CREATE TABLE `django_admin_log` (
   KEY `django_admin_log_user_id_c564eba6_fk_reservationapp_ruser_id` (`user_id`),
   CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   CONSTRAINT `django_admin_log_user_id_c564eba6_fk_reservationapp_ruser_id` FOREIGN KEY (`user_id`) REFERENCES `reservationapp_ruser` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `django_admin_log` (
 
 LOCK TABLES `django_admin_log` WRITE;
 /*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
-INSERT INTO `django_admin_log` VALUES (1,'2019-07-15 01:36:53.201278','34','Notice object (34)',2,'[]',6,3),(2,'2019-07-15 01:36:59.648240','34','Notice object (34)',2,'[]',6,3),(3,'2019-07-15 01:37:08.543016','53','Notice object (53)',2,'[]',6,3),(4,'2019-07-15 02:11:10.740048','53','Notice object (53)',2,'[]',6,3),(5,'2019-07-15 02:11:21.232019','53','Notice object (53)',3,'',6,3),(6,'2019-07-15 03:16:18.718108','6','Place object (6)',1,'[{\"added\": {}}]',9,3);
+INSERT INTO `django_admin_log` VALUES (1,'2019-07-23 07:27:32.348853','3','Notice_place object (3)',3,'',8,3);
 /*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +142,7 @@ CREATE TABLE `django_content_type` (
   `model` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `django_content_type_app_label_model_76bd3d3b_uniq` (`app_label`,`model`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `django_content_type` (
 
 LOCK TABLES `django_content_type` WRITE;
 /*!40000 ALTER TABLE `django_content_type` DISABLE KEYS */;
-INSERT INTO `django_content_type` VALUES (1,'admin','logentry'),(3,'auth','group'),(2,'auth','permission'),(4,'contenttypes','contenttype'),(8,'reservationapp','instrument'),(6,'reservationapp','notice'),(9,'reservationapp','place'),(7,'reservationapp','ruser'),(5,'sessions','session');
+INSERT INTO `django_content_type` VALUES (1,'admin','logentry'),(3,'auth','group'),(2,'auth','permission'),(4,'contenttypes','contenttype'),(6,'reservationapp','instrument'),(7,'reservationapp','notice_instrument'),(8,'reservationapp','notice_place'),(9,'reservationapp','place'),(10,'reservationapp','ruser'),(5,'sessions','session');
 /*!40000 ALTER TABLE `django_content_type` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -168,7 +168,7 @@ CREATE TABLE `django_migrations` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `applied` datetime(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -177,7 +177,7 @@ CREATE TABLE `django_migrations` (
 
 LOCK TABLES `django_migrations` WRITE;
 /*!40000 ALTER TABLE `django_migrations` DISABLE KEYS */;
-INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2019-07-13 11:29:03.693671'),(2,'contenttypes','0002_remove_content_type_name','2019-07-13 11:29:05.010150'),(3,'auth','0001_initial','2019-07-13 11:29:06.063324'),(4,'auth','0002_alter_permission_name_max_length','2019-07-13 11:29:10.477551'),(5,'auth','0003_alter_user_email_max_length','2019-07-13 11:29:10.546380'),(6,'auth','0004_alter_user_username_opts','2019-07-13 11:29:10.622184'),(7,'auth','0005_alter_user_last_login_null','2019-07-13 11:29:10.799708'),(8,'auth','0006_require_contenttypes_0002','2019-07-13 11:29:10.864493'),(9,'auth','0007_alter_validators_add_error_messages','2019-07-13 11:29:10.950262'),(10,'auth','0008_alter_user_username_max_length','2019-07-13 11:29:11.014115'),(11,'auth','0009_alter_user_last_name_max_length','2019-07-13 11:29:11.099861'),(12,'auth','0010_alter_group_name_max_length','2019-07-13 11:29:11.949590'),(13,'auth','0011_update_proxy_permissions','2019-07-13 11:29:12.035359'),(14,'reservationapp','0001_initial','2019-07-13 11:29:13.459551'),(15,'admin','0001_initial','2019-07-13 11:29:18.206874'),(16,'admin','0002_logentry_remove_auto_add','2019-07-13 11:29:20.370076'),(17,'admin','0003_logentry_add_action_flag_choices','2019-07-13 11:29:20.441898'),(18,'sessions','0001_initial','2019-07-13 11:29:20.834824'),(19,'reservationapp','0002_auto_20190715_1051','2019-07-15 02:51:14.165240');
+INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2019-07-23 02:45:02.903596'),(2,'contenttypes','0002_remove_content_type_name','2019-07-23 02:45:04.296844'),(3,'auth','0001_initial','2019-07-23 02:45:05.442813'),(4,'auth','0002_alter_permission_name_max_length','2019-07-23 02:45:10.132274'),(5,'auth','0003_alter_user_email_max_length','2019-07-23 02:45:10.196093'),(6,'auth','0004_alter_user_username_opts','2019-07-23 02:45:10.276850'),(7,'auth','0005_alter_user_last_login_null','2019-07-23 02:45:10.348697'),(8,'auth','0006_require_contenttypes_0002','2019-07-23 02:45:10.409530'),(9,'auth','0007_alter_validators_add_error_messages','2019-07-23 02:45:10.496304'),(10,'auth','0008_alter_user_username_max_length','2019-07-23 02:45:10.571058'),(11,'auth','0009_alter_user_last_name_max_length','2019-07-23 02:45:10.644866'),(12,'auth','0010_alter_group_name_max_length','2019-07-23 02:45:11.653206'),(13,'auth','0011_update_proxy_permissions','2019-07-23 02:45:11.726008'),(14,'reservationapp','0001_initial','2019-07-23 02:45:14.381875'),(15,'admin','0001_initial','2019-07-23 02:45:18.927746'),(16,'admin','0002_logentry_remove_auto_add','2019-07-23 02:45:21.024139'),(17,'admin','0003_logentry_add_action_flag_choices','2019-07-23 02:45:21.105920'),(18,'sessions','0001_initial','2019-07-23 02:45:21.498872');
 /*!40000 ALTER TABLE `django_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -203,7 +203,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('0mnby70g5mua5ovq3jt5qsnw2uir4ohi','OWY5ZDBlNzYzNjQ0N2FlM2IxMDM3MjAyOTgxNzQyMGM3ODNmM2M3ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiZDc1ODNmMTAyNGZjNjk0ZWFkYmQ5Y2U1ZTMwNjg1ODBkMjI5MDI3In0=','2019-07-29 00:23:27.945298'),('4q1f89o8yk10ar50sqhvlfvzf5e4u5p9','ZmIxNWMwY2I1NjhjMGRmM2EyMmIyODM1YWE2OTgzNjUzM2U5NTJhODp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMmZkOTJhNGJhMzY2MjJkYzc2MzVhMmUwNzgwYWRiZTgxZjEwN2I0In0=','2019-07-29 03:33:42.307692'),('catbl1vp3o8mb3lircwf4eg5miuhrsdi','ZmIxNWMwY2I1NjhjMGRmM2EyMmIyODM1YWE2OTgzNjUzM2U5NTJhODp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMmZkOTJhNGJhMzY2MjJkYzc2MzVhMmUwNzgwYWRiZTgxZjEwN2I0In0=','2019-07-29 06:50:47.009810'),('g3nlcpdhn5gad5kmtzswonf28zxmvmjg','ZmIxNWMwY2I1NjhjMGRmM2EyMmIyODM1YWE2OTgzNjUzM2U5NTJhODp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzMmZkOTJhNGJhMzY2MjJkYzc2MzVhMmUwNzgwYWRiZTgxZjEwN2I0In0=','2019-07-29 01:02:27.707367'),('jcvavagnsr83sgi3mej24mtep51jwmk9','OWY5ZDBlNzYzNjQ0N2FlM2IxMDM3MjAyOTgxNzQyMGM3ODNmM2M3ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiZDc1ODNmMTAyNGZjNjk0ZWFkYmQ5Y2U1ZTMwNjg1ODBkMjI5MDI3In0=','2019-07-29 00:49:28.895295'),('plqpag0bb8xljao6647k0fsaulodp358','OWY5ZDBlNzYzNjQ0N2FlM2IxMDM3MjAyOTgxNzQyMGM3ODNmM2M3ODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiZDc1ODNmMTAyNGZjNjk0ZWFkYmQ5Y2U1ZTMwNjg1ODBkMjI5MDI3In0=','2019-07-29 06:49:50.548962');
+INSERT INTO `django_session` VALUES ('a9sprefhx92piv0cdwgncnxqj8a1zcs8','ZGFiYTAwZTZkNzFjY2Q0OTM1ZDVlMWIyZGIyZmVhNDVlMmM1Y2M0ODp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjODJkMTgyNWJhY2ZiODQ1NzRlZDQzMjI1NTI0NmZhMDYzZGU1NTcyIn0=','2019-08-06 02:54:59.705039'),('rb2m9brka1ei4ue5j3ehpsewlgi1r97y','ZTM0NTQ2ZmRiYWJmMmUwMDdlMmYwZGFkMTE2YTIwYjI5MzA1NjA1Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGI5ODM2NDM4OWY1Y2MwNmY4NjA0ZGRmYWFiZTNjMTE2YzVhOGU1In0=','2019-08-06 03:06:06.637177'),('tjm87httpgu0hlmwu15fjzsc02k9p8jv','ZTM0NTQ2ZmRiYWJmMmUwMDdlMmYwZGFkMTE2YTIwYjI5MzA1NjA1Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGI5ODM2NDM4OWY1Y2MwNmY4NjA0ZGRmYWFiZTNjMTE2YzVhOGU1In0=','2019-08-06 03:05:18.191059');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -218,7 +218,7 @@ CREATE TABLE `reservationapp_instrument` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `instrument_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,32 +232,63 @@ INSERT INTO `reservationapp_instrument` VALUES (1,'荧光定量PCR仪'),(2,'高�
 UNLOCK TABLES;
 
 --
--- Table structure for table `reservationapp_notice`
+-- Table structure for table `reservationapp_notice_instrument`
 --
 
-DROP TABLE IF EXISTS `reservationapp_notice`;
+DROP TABLE IF EXISTS `reservationapp_notice_instrument`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `reservationapp_notice` (
+CREATE TABLE `reservationapp_notice_instrument` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `place` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `people` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `date` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `time` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `time_begin` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `time_end` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `number` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `remark` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `reservationapp_notice`
+-- Dumping data for table `reservationapp_notice_instrument`
 --
 
-LOCK TABLES `reservationapp_notice` WRITE;
-/*!40000 ALTER TABLE `reservationapp_notice` DISABLE KEYS */;
-INSERT INTO `reservationapp_notice` VALUES (21,'生化楼前2楼会议室','刘毅杨','2019-07-14','8:00-9:00','17754017759',''),(22,'生化楼前2楼会议室','刘毅杨','2019-07-14','9:00-10:00','17754017759',''),(23,'生化楼前2楼会议室','刘毅杨','2019-07-14','18:00-19:00','17754017759',''),(24,'生化楼后2楼会议室','刘','2019-07-15','14:00-15:00','42753753',''),(25,'生化楼后2楼会议室','刘','2019-07-15','11:00-12:00','4241',''),(26,'生化楼1楼阅览室','李','2019-07-18','14:00-15:00','13956935439',''),(27,'生化楼1楼阅览室','李','2019-07-16','16:00-17:00','13956935439',''),(28,'生化楼1楼阅览室','李','2019-07-16','18:00-19:00','1111111',''),(29,'生化楼前5楼会议室','李','2019-07-15','13:00-14:00','sd',''),(30,'荧光定量PCR仪','刘毅杨','2019-07-14','14:00-15:00','17754017759',''),(31,'荧光定量PCR仪','刘毅杨','2019-07-14','8:00-9:00','17754017759',''),(32,'荧光定量PCR仪','刘毅杨','2019-07-14','19:00-20:00','17754017759',''),(33,'高效液相色谱仪','刘毅杨','2019-07-19','9:00-10:00','17754017759',''),(34,'高效液相色谱仪','李','2019-07-16','16:00-17:00','42753753',''),(35,'高效液相色谱仪','王','2019-07-16','12:00-13:00','17754017759',''),(36,'高效液相色谱仪','王','2019-07-18','18:00-19:00','s\'d',''),(37,'激光共聚焦显微镜','s\'d','2019-07-16','13:00-14:00','4241',''),(38,'正置荧光显微镜','李','2019-07-24','16:00-17:00','4241',''),(39,'正置荧光显微镜','赵','2019-07-14','9:00-10:00','13956935439',''),(40,'正置荧光显微镜','赵','2019-07-20','14:00-15:00','124',''),(41,'流式细胞仪','呵呵','2019-07-29','18:00-19:00','42753753',''),(42,'正置荧光显微镜','刘','2019-07-16','9:00-10:00','4241',''),(43,'流式细胞仪','李','2019-07-31','14:00-15:00','4241',''),(44,'流式细胞仪','李','2019-07-31','8:00-9:00','s\'d',''),(45,'流式细胞仪','李','2019-08-02','10:00-11:00','17754017759',''),(46,'生化楼后2楼会议室','张','2019-07-31','9:00-10:00','11111111111111',''),(47,'生化楼后2楼会议室','张','2019-07-31','12:00-13:00','11111111111',''),(48,'生化楼1楼阅览室','张','2019-07-31','19:00-20:00','2222222222222222',''),(49,'生化楼前5楼会议室','张','2019-07-31','8:00-9:00','32534',''),(50,'生化楼1楼阅览室','李','2019-07-25','10:00-11:00','3333',''),(51,'生化楼前2楼会议室','王','2019-08-02','9:00-10:00','2222',''),(52,'生化楼前2楼会议室','王','2019-07-31','17:00-18:00','5555','');
-/*!40000 ALTER TABLE `reservationapp_notice` ENABLE KEYS */;
+LOCK TABLES `reservationapp_notice_instrument` WRITE;
+/*!40000 ALTER TABLE `reservationapp_notice_instrument` DISABLE KEYS */;
+INSERT INTO `reservationapp_notice_instrument` VALUES (1,'高效液相色谱仪','张','2019-07-23','8','9','17754017759',''),(2,'高效液相色谱仪','刘毅杨','2019-07-23','9','10','17754017759',''),(3,'荧光定量PCR仪','刘毅杨','2019-07-23','8','11','17754017759','');
+/*!40000 ALTER TABLE `reservationapp_notice_instrument` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `reservationapp_notice_place`
+--
+
+DROP TABLE IF EXISTS `reservationapp_notice_place`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `reservationapp_notice_place` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `place` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `people` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `date` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `time_begin` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `time_end` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `number` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `remark` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `reservationapp_notice_place`
+--
+
+LOCK TABLES `reservationapp_notice_place` WRITE;
+/*!40000 ALTER TABLE `reservationapp_notice_place` DISABLE KEYS */;
+INSERT INTO `reservationapp_notice_place` VALUES (1,'生化楼前2楼会议室','刘毅杨','2019-07-15','8','9','42753753',''),(2,'生化楼1楼阅览室','刘毅杨','2019-07-23','8','9','17754017759',''),(4,'生化楼前2楼会议室','刘毅杨','2019-07-23','11','12','17754017759',''),(5,'生化楼后2楼会议室','刘毅杨','2019-07-23','8','9','17754017759',''),(6,'生化楼前2楼会议室','刘毅杨','2019-07-23','10','11','17754017759','');
+/*!40000 ALTER TABLE `reservationapp_notice_place` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -271,7 +302,7 @@ CREATE TABLE `reservationapp_place` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `place_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -280,7 +311,7 @@ CREATE TABLE `reservationapp_place` (
 
 LOCK TABLES `reservationapp_place` WRITE;
 /*!40000 ALTER TABLE `reservationapp_place` DISABLE KEYS */;
-INSERT INTO `reservationapp_place` VALUES (1,'生化楼前2楼会议室'),(2,'生化楼后2楼会议室'),(3,'生化楼1楼阅览室'),(4,'生化楼前5楼会议室');
+INSERT INTO `reservationapp_place` VALUES (2,'生化楼前2楼会议室'),(3,'生化楼后2楼会议室'),(4,'生化楼1楼阅览室'),(5,'生化楼前5楼会议室');
 /*!40000 ALTER TABLE `reservationapp_place` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -314,7 +345,7 @@ CREATE TABLE `reservationapp_ruser` (
 
 LOCK TABLES `reservationapp_ruser` WRITE;
 /*!40000 ALTER TABLE `reservationapp_ruser` DISABLE KEYS */;
-INSERT INTO `reservationapp_ruser` VALUES (1,'pbkdf2_sha256$150000$alQFVOWLm3g3$nhcxBdf8SYSsX0yipp03HVj0j9/HDmEXiv3Pee6t60w=','2019-07-15 06:49:50.474126',0,'shengkeyuan','','','1@1.com',0,1,'2019-07-13 11:31:19.617981'),(3,'pbkdf2_sha256$150000$YdggBVdicuGA$5LMgT7zy7He+xCQpnfRQ67D1H37Efa2bSpu5GtjbC0w=','2019-07-15 06:50:46.935021',1,'admin','','','1@1.com',1,1,'2019-07-15 01:02:09.736994');
+INSERT INTO `reservationapp_ruser` VALUES (1,'pbkdf2_sha256$150000$VDB3kEdkXNcf$CE3RgdHzjBwmJu9Gpce0WHQwWuNbXdMJQmdG5nFH8sc=','2019-07-23 03:06:06.561397',0,'sky','','','1@1.com',0,1,'2019-07-23 02:47:16.760554'),(3,'pbkdf2_sha256$150000$dleniXBI1LsF$0yE2uyJm2EKHpkw7f+ZTJ9EBLYtrXHt8r4h/pVhdoWc=','2019-07-23 02:54:59.623260',1,'skygl','','','1@1.com',1,1,'2019-07-23 02:54:33.851185');
 /*!40000 ALTER TABLE `reservationapp_ruser` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -383,4 +414,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-15 16:09:11
+-- Dump completed on 2019-07-23 16:11:56

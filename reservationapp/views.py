@@ -63,7 +63,7 @@ def index1(request):
             error_msg = '请正确填写预约时间'
         elif number == '':
             error_msg = '请正确填写联系方式'
-        elif int(time_end) < int(time_begin):
+        elif int(time_end) <= int(time_begin):
             error_msg = '结束时间应当大于开始时间'
         else:
             a = Notice_place.objects.filter(place=place, date=date)
@@ -104,7 +104,7 @@ def index1_wx(request):
             error_msg = '请正确填写预约时间'
         elif number == '':
             error_msg = '请正确填写联系方式'
-        elif int(time_end) < int(time_begin):
+        elif int(time_end) <= int(time_begin):
             error_msg = '结束时间应当大于开始时间'
         else:
             a = Notice_place.objects.filter(place=place, date=date)
@@ -146,7 +146,7 @@ def index2(request):
             error_msg = '请正确填写预约时间'
         elif number == '':
             error_msg = '请正确填写联系方式'
-        elif int(time_end) < int(time_begin):
+        elif int(time_end) <= int(time_begin):
             error_msg = '结束时间应当大于开始时间'
         else:
             a = Notice_instrument.objects.filter(place=place, date=date)
@@ -187,7 +187,7 @@ def index2_wx(request):
             error_msg = '请正确填写预约时间'
         elif number == '':
             error_msg = '请正确填写联系方式'
-        elif int(time_end) < int(time_begin):
+        elif int(time_end) <= int(time_begin):
             error_msg = '结束时间应当大于开始时间'
         else:
             a = Notice_instrument.objects.filter(place=place, date=date)

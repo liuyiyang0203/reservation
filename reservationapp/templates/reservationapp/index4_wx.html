@@ -78,11 +78,12 @@
             <div class="col-12">
               <div class="row justify-content-center align-items-center text-center">
                 <div class="col-lg-6">
-                  <h1 data-aos="fade-up" data-aos-delay="0">预约详情列表</h1>
-                    <a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约详情</button></a>
-                    <a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约</button></a>
-                    <a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约</button></a>
-                    <a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white">退出登录</button></a>
+                  <h1 data-aos="fade-up" data-aos-delay="0">仪器预约列表</h1>
+                    <a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">场地预约</button></a>
+                    <a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">仪器预约</button></a>
+                    <a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">退出登录</button></a>
+                    <a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">场地预约详情</button></a>
+                    <a href="../index4_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">仪器预约详情</button></a>
 {#                  <p data-aos="fade-up" data-aos-delay="100">4 Lessons / 12 Week &bullet; 2,193 students &bullet; <a href="#" class="text-white">6 comments</a></p>#}
                 </div>
 
@@ -111,7 +112,7 @@
 				</tr>
                 {% for i in e %}
                 <tr>
-                    <td>{{ i.date }}<br>{{ i.time }}</td>
+                    <td>{{ i.date }}<br>{{ i.time_begin }}点-{{ i.time_end }}点</td>
                     <td>{{ i.place }}</td>
                     <td>{{ i.people }}</td>
                     <td>{{ i.number }}</td>

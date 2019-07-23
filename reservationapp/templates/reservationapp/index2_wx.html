@@ -79,10 +79,11 @@
               <div class="row justify-content-center align-items-center text-center">
                 <div class="col-lg-6">
                   <h1 data-aos="fade-up" data-aos-delay="0">仪器预约</h1>
-                    <a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约详情</button></a>
-                    <a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">场地预约</button></a>
-                    <a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white">仪器预约</button></a>
-                    <a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white">退出登录</button></a>
+                    <a href="../index1_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">场地预约</button></a>
+                    <a href="../index2_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">仪器预约</button></a>
+                    <a href="{% url 'user_logout_wx' %}" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">退出登录</button></a>
+                    <a href="../index3_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">场地预约详情</button></a>
+                    <a href="../index4_wx" class="nav-link"><button style="background-color:#8b80c6;color:white;font-size: 15px">仪器预约详情</button></a>
 {#                  <p data-aos="fade-up" data-aos-delay="100">4 Lessons / 12 Week &bullet; 2,193 students &bullet; <a href="#" class="text-white">6 comments</a></p>#}
                 </div>
 
@@ -106,7 +107,7 @@
                 <p class="place">预约仪器*：
                 <select style="height: 30px;width: 200px" name="place">
                     <option value="" style="display: none;">请选择</option>
-                    {% for j in instrument %}
+                    {% for j in instrument_name %}
                     <option>{{ j.instrument_name }}</option>
                     {% endfor %}
                 </select>
@@ -114,23 +115,41 @@
                 <p class="people">预约人员*：<input type="text" style="height: 30px;width: 200px" name="people"/></p>
                 <p class="time">预约时间*：<input class="date" style="height: 30px;width: 200px" type="date" name="date"/></p>
 
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select style="height: 30px;width: 200px" name="time">
-                    <option value="" style="display: none;">请选择</option>
-                    <option>8:00-9:00</option>
-                    <option>9:00-10:00</option>
-                    <option>10:00-11:00</option>
-                    <option>11:00-12:00</option>
-                    <option>12:00-13:00</option>
-                    <option>13:00-14:00</option>
-                    <option>14:00-15:00</option>
-                    <option>15:00-16:00</option>
-                    <option>16:00-17:00</option>
-                    <option>17:00-18:00</option>
-                    <option>18:00-19:00</option>
-                    <option>19:00-20:00</option>
-                    <option>20:00-21:00</option>
-                    <option>21:00-22:00</option>
-                    <option>22:00-23:00</option>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select style="height: 30px;width: 200px" name="time_begin">
+                    <option value="" style="display: none;">请选择开始时间</option>
+                    <option value="8">8点</option>
+                    <option value="9">9点</option>
+                    <option value="10">10点</option>
+                    <option value="11">11点</option>
+                    <option value="12">12点</option>
+                    <option value="13">13点</option>
+                    <option value="14">14点</option>
+                    <option value="15">15点</option>
+                    <option value="16">16点</option>
+                    <option value="17">17点</option>
+                    <option value="18">18点</option>
+                    <option value="19">19点</option>
+                    <option value="20">20点</option>
+                    <option value="21">21点</option>
+                    <option value="22">22点</option>
+                    </select></p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select style="height: 30px;width: 200px" name="time_end">
+                    <option value="" style="display: none;">请选择结束时间</option>
+                    <option value="8">8点</option>
+                    <option value="9">9点</option>
+                    <option value="10">10点</option>
+                    <option value="11">11点</option>
+                    <option value="12">12点</option>
+                    <option value="13">13点</option>
+                    <option value="14">14点</option>
+                    <option value="15">15点</option>
+                    <option value="16">16点</option>
+                    <option value="17">17点</option>
+                    <option value="18">18点</option>
+                    <option value="19">19点</option>
+                    <option value="20">20点</option>
+                    <option value="21">21点</option>
+                    <option value="22">22点</option>
                 </select></p>
                 <p class="number">联系方式*：<input type="text" style="height: 30px;width: 200px" name="number"/></p>
                 其他备注  ：<p class="remark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="20" name="remark"></textarea></p>

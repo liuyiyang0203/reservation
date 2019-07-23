@@ -203,7 +203,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('a9sprefhx92piv0cdwgncnxqj8a1zcs8','ZGFiYTAwZTZkNzFjY2Q0OTM1ZDVlMWIyZGIyZmVhNDVlMmM1Y2M0ODp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjODJkMTgyNWJhY2ZiODQ1NzRlZDQzMjI1NTI0NmZhMDYzZGU1NTcyIn0=','2019-08-06 02:54:59.705039'),('rb2m9brka1ei4ue5j3ehpsewlgi1r97y','ZTM0NTQ2ZmRiYWJmMmUwMDdlMmYwZGFkMTE2YTIwYjI5MzA1NjA1Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGI5ODM2NDM4OWY1Y2MwNmY4NjA0ZGRmYWFiZTNjMTE2YzVhOGU1In0=','2019-08-06 03:06:06.637177'),('tjm87httpgu0hlmwu15fjzsc02k9p8jv','ZTM0NTQ2ZmRiYWJmMmUwMDdlMmYwZGFkMTE2YTIwYjI5MzA1NjA1Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGI5ODM2NDM4OWY1Y2MwNmY4NjA0ZGRmYWFiZTNjMTE2YzVhOGU1In0=','2019-08-06 03:05:18.191059');
+INSERT INTO `django_session` VALUES ('rb2m9brka1ei4ue5j3ehpsewlgi1r97y','ZTM0NTQ2ZmRiYWJmMmUwMDdlMmYwZGFkMTE2YTIwYjI5MzA1NjA1Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGI5ODM2NDM4OWY1Y2MwNmY4NjA0ZGRmYWFiZTNjMTE2YzVhOGU1In0=','2019-08-06 03:06:06.637177'),('tjm87httpgu0hlmwu15fjzsc02k9p8jv','ZTM0NTQ2ZmRiYWJmMmUwMDdlMmYwZGFkMTE2YTIwYjI5MzA1NjA1Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGI5ODM2NDM4OWY1Y2MwNmY4NjA0ZGRmYWFiZTNjMTE2YzVhOGU1In0=','2019-08-06 03:05:18.191059');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -248,7 +248,7 @@ CREATE TABLE `reservationapp_notice_instrument` (
   `number` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `remark` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -257,7 +257,7 @@ CREATE TABLE `reservationapp_notice_instrument` (
 
 LOCK TABLES `reservationapp_notice_instrument` WRITE;
 /*!40000 ALTER TABLE `reservationapp_notice_instrument` DISABLE KEYS */;
-INSERT INTO `reservationapp_notice_instrument` VALUES (1,'高效液相色谱仪','张','2019-07-23','8','9','17754017759',''),(2,'高效液相色谱仪','刘毅杨','2019-07-23','9','10','17754017759',''),(3,'荧光定量PCR仪','刘毅杨','2019-07-23','8','11','17754017759','');
+INSERT INTO `reservationapp_notice_instrument` VALUES (1,'高效液相色谱仪','张','2019-07-23','8','9','17754017759',''),(2,'高效液相色谱仪','刘毅杨','2019-07-23','9','10','17754017759',''),(3,'荧光定量PCR仪','刘毅杨','2019-07-23','8','11','17754017759',''),(4,'流式细胞仪','刘毅杨','2019-07-24','8','11','17754017759',''),(5,'流式细胞仪','刘毅杨','2019-07-24','11','12','17754017759','');
 /*!40000 ALTER TABLE `reservationapp_notice_instrument` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -278,7 +278,7 @@ CREATE TABLE `reservationapp_notice_place` (
   `number` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `remark` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -287,7 +287,7 @@ CREATE TABLE `reservationapp_notice_place` (
 
 LOCK TABLES `reservationapp_notice_place` WRITE;
 /*!40000 ALTER TABLE `reservationapp_notice_place` DISABLE KEYS */;
-INSERT INTO `reservationapp_notice_place` VALUES (1,'生化楼前2楼会议室','刘毅杨','2019-07-15','8','9','42753753',''),(2,'生化楼1楼阅览室','刘毅杨','2019-07-23','8','9','17754017759',''),(4,'生化楼前2楼会议室','刘毅杨','2019-07-23','11','12','17754017759',''),(5,'生化楼后2楼会议室','刘毅杨','2019-07-23','8','9','17754017759',''),(6,'生化楼前2楼会议室','刘毅杨','2019-07-23','10','11','17754017759','');
+INSERT INTO `reservationapp_notice_place` VALUES (1,'生化楼前2楼会议室','刘毅杨','2019-07-15','8','9','42753753',''),(2,'生化楼1楼阅览室','刘毅杨','2019-07-23','8','9','17754017759',''),(4,'生化楼前2楼会议室','刘毅杨','2019-07-23','11','12','17754017759',''),(5,'生化楼后2楼会议室','刘毅杨','2019-07-23','8','9','17754017759',''),(6,'生化楼前2楼会议室','刘毅杨','2019-07-23','10','11','17754017759',''),(7,'生化楼1楼阅览室','刘毅杨','2019-07-24','8','11','17754017759',''),(8,'生化楼前5楼会议室','刘毅杨','2019-07-24','8','9','17754017759',''),(9,'生化楼前2楼会议室','刘毅杨','2019-07-24','10','12','17754017759',''),(10,'生化楼前5楼会议室','李','2019-07-25','10','10','17754017759',''),(11,'生化楼1楼阅览室','liu','2019-07-25','18','19','17754017759',''),(12,'生化楼1楼阅览室','刘毅杨','2019-07-23','17','20','42753753',''),(13,'生化楼后2楼会议室','刘毅杨','2019-07-24','21','22','17754017759','');
 /*!40000 ALTER TABLE `reservationapp_notice_place` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -345,7 +345,7 @@ CREATE TABLE `reservationapp_ruser` (
 
 LOCK TABLES `reservationapp_ruser` WRITE;
 /*!40000 ALTER TABLE `reservationapp_ruser` DISABLE KEYS */;
-INSERT INTO `reservationapp_ruser` VALUES (1,'pbkdf2_sha256$150000$VDB3kEdkXNcf$CE3RgdHzjBwmJu9Gpce0WHQwWuNbXdMJQmdG5nFH8sc=','2019-07-23 03:06:06.561397',0,'sky','','','1@1.com',0,1,'2019-07-23 02:47:16.760554'),(3,'pbkdf2_sha256$150000$dleniXBI1LsF$0yE2uyJm2EKHpkw7f+ZTJ9EBLYtrXHt8r4h/pVhdoWc=','2019-07-23 02:54:59.623260',1,'skygl','','','1@1.com',1,1,'2019-07-23 02:54:33.851185');
+INSERT INTO `reservationapp_ruser` VALUES (1,'pbkdf2_sha256$150000$VDB3kEdkXNcf$CE3RgdHzjBwmJu9Gpce0WHQwWuNbXdMJQmdG5nFH8sc=','2019-07-23 09:35:02.193984',0,'sky','','','1@1.com',0,1,'2019-07-23 02:47:16.760554'),(3,'pbkdf2_sha256$150000$dleniXBI1LsF$0yE2uyJm2EKHpkw7f+ZTJ9EBLYtrXHt8r4h/pVhdoWc=','2019-07-23 02:54:59.623260',1,'skygl','','','1@1.com',1,1,'2019-07-23 02:54:33.851185');
 /*!40000 ALTER TABLE `reservationapp_ruser` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -414,4 +414,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-23 16:11:56
+-- Dump completed on 2019-07-23 19:21:30

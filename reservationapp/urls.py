@@ -10,6 +10,8 @@ urlpatterns = [
     path('index2_wx/', views.index2_wx, name='index2_wx'),
     path('index3/', views.index3, name='index3'),
     path('index3_wx/', views.index3_wx, name='index3_wx'),
+    path('index4/', views.index4, name='index4'),
+    path('index4_wx/', views.index4_wx, name='index4_wx'),
     path('user_logout/', views.user_logout, name='user_logout'),
     path('user_logout_wx/', views.user_logout_wx, name='user_logout_wx'),
 ]

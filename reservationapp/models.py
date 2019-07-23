@@ -7,16 +7,31 @@ from django.contrib.auth.models import AbstractUser
 class RUser(AbstractUser):
     pass
 
-class Notice(models.Model):
-    place = models.CharField(max_length=50, verbose_name='预约场地、仪器')
+
+class Notice_place(models.Model):
+    place = models.CharField(max_length=50, verbose_name='预约场地')
     people = models.CharField(max_length=50, verbose_name='预约人员')
     date = models.CharField(max_length=50, verbose_name='预约日期')
-    time = models.CharField(max_length=100, verbose_name='预约时间')
+    time_begin = models.CharField(max_length=100, verbose_name='开始时间')
+    time_end = models.CharField(max_length=100, verbose_name='结束时间')
     number = models.CharField(max_length=50, verbose_name='联系方式')
     remark = models.CharField(max_length=1000, verbose_name='其他备注')
 
     class Meta:
-        verbose_name = '预约详情'
+        verbose_name = '预约场地详情'
+        verbose_name_plural = verbose_name
+
+class Notice_instrument(models.Model):
+    place = models.CharField(max_length=50, verbose_name='预约仪器')
+    people = models.CharField(max_length=50, verbose_name='预约人员')
+    date = models.CharField(max_length=50, verbose_name='预约日期')
+    time_begin = models.CharField(max_length=100, verbose_name='开始时间')
+    time_end = models.CharField(max_length=100, verbose_name='结束时间')
+    number = models.CharField(max_length=50, verbose_name='联系方式')
+    remark = models.CharField(max_length=1000, verbose_name='其他备注')
+
+    class Meta:
+        verbose_name = '预约仪器详情'
         verbose_name_plural = verbose_name
 
 

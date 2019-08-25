@@ -301,3 +301,8 @@ def user_logout_wx(request):
         return HttpResponseRedirect('/index_wx')
     else:
         return HttpResponseRedirect('/index_wx')
+
+
+def txt(request):
+    f = '6ed8edd99c82423bca108f7bc06cf71b'
+    return HttpResponse(f)

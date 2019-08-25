@@ -14,4 +14,5 @@ urlpatterns = [
     path('index4_wx/', views.index4_wx, name='index4_wx'),
     path('user_logout/', views.user_logout, name='user_logout'),
     path('user_logout_wx/', views.user_logout_wx, name='user_logout_wx'),
+    path('MnhGYLEUPd.txt/', views.txt, name='MnhGYLEUPd.txt'),
 ]
